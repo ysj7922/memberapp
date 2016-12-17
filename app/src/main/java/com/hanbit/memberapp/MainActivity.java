@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.hanbit.memberapp.controller.JoinActivity;
-import com.hanbit.memberapp.controller.ListActivity;
+import com.hanbit.memberapp.controller.LoginActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button btJoin,btLogin;
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btLogin :
                 Toast.makeText(MainActivity.this,"",Toast.LENGTH_LONG).show();
-                this.startActivity(new Intent(MainActivity.this, ListActivity.class));
+                this.startActivity(new Intent(MainActivity.this, LoginActivity.class));
                 break;
 
         }

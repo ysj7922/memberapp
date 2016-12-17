@@ -1,5 +1,8 @@
 package com.hanbit.memberapp.dao;
 
+import android.content.Context;
+import android.util.Log;
+
 import com.hanbit.memberapp.domain.MemberBeen;
 
 import java.util.ArrayList;
@@ -10,6 +13,10 @@ import java.util.List;
  */
 
 public class MemberDAO {
+    public MemberDAO(Context applicationContext) {
+
+    }
+
     public MemberBeen detail(String id){
         MemberBeen member = new MemberBeen();
         return member;
@@ -24,11 +31,20 @@ public class MemberDAO {
         return list;
     }
     public boolean login(MemberBeen param){
-        boolean flag = false;
+        Log.d("DAO에 넘어온 ID :",param.getId());
+        boolean flag = true;
+        Log.d("로그인 결과 :",String.valueOf(flag));
         return flag;
     }
-    public void update(MemberBeen param){}
-    public void delete(String id){}
+
+    public void update(MemberBeen param){
+
+    }
+
+    public void delete(String id){
+
+    }
+
     public int count(){
         int count =0;
         return count;
